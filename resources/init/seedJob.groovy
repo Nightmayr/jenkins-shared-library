@@ -1,5 +1,10 @@
 node('master'){
-    stage("test"){
-        println("hello jenkins")
+    stage("checkout"){
+       cleanWs()
+       checkout scm
+    }
+
+    stage("Job seeding"){
+        jobDsl(targets: 'resources/jobDSL/*.groovy')
     }
 }

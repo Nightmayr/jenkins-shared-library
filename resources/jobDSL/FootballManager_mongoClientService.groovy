@@ -1,4 +1,4 @@
-pipelineJob('FootballManager-AccountApi'){
+pipelineJob('FootballManager-MongoClient'){
     parameters{
         gitParam('branch'){
             type('BRANCH')

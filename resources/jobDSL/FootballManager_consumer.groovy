@@ -1,4 +1,4 @@
-pipelineJob('FootballManager-AccountApi'){
+pipelineJob('FootballManager-Consumer'){
     parameters{
         gitParam('branch'){
             type('BRANCH')
